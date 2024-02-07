@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F2EDE2;
+    color: #333;
+}
+.header, .tab-content, .footer {
+    background-color: #F2EDE2;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.logo a, .nav a {
+    text-decoration: none;
+}
+.logo img {
+    height: 50px;
+    width: auto;
+}
+.nav {
+    display: flex;
+    list-style: none;
+    background-color: #333;
+    border-radius: 30px;
+}
+.nav a {
+    color: #fff;
+    padding: 10px 30px;
+    transition: background-color 0.3s;
+}
+.nav a:hover, .nav a.active {
+    background-color: #a83232;
+    border-radius: 30px;
+}
+.tab-content {
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: white;
+}
+.centered-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+}
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  .logo a, .nav a {
+    text-decoration: none;
+  }
+  .logo img {
+    height: 50px;
+    width: auto;
+  }
+  .nav {
+    display: flex;
+    list-style: none;
+    background-color: #333;
+    border-radius: 30px;
+  }
+  .nav a {
+    color: #fff;
+    padding: 10px 30px;
+    transition: background-color 0.3s;
+  }
+  .nav a:hover, .nav a.active {
+    background-color: #a83232;
+    border-radius: 30px;
+    
+  }
+  .tab-content {
+    display: none;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: white;
+  }
+  #Home, #About, #Openings, #Apply {
+    display: none;
+  }
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+  }
+  input, select, textarea, button {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    width: calc(100% - 22px);
+  }
+  button {
+    background-color: #04AA6D;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #037a54;
+  }
+  #Home h1, #Home h2, #Home h3, #Home p, #About h2, #About p, #Openings h2, #Openings .job-opening, #Apply h2 {
+    margin-bottom: 16px;
+  }
+  #Home h1 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  #Home h2, #About h2, #Openings h2, #Apply h2 {
+    font-size: 2rem;
+    color: #555;
+  }
+  #Home h2 {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    animation: blink-caret .75s step-end infinite, slideUp 1.5s ease-out forwards;
+  }
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translate(-50px, 50px);
+    }
+    to {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  }
+  #Home p, #About p, #Openings .job-opening p, #Apply form {
+    line-height: 1.6;
+    color: #666;
+  }
+  .job-opening {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .job-opening:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+  @media (max-width: 768px) {
+    .link-box-container {
+      flex-direction: column;
+      background-color: antiquewhite;
+    }
+    .link-box {
+      margin-bottom: 20px;
+    }
+  }
